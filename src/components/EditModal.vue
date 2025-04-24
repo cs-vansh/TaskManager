@@ -73,7 +73,10 @@ const closeDialog = () => {
 
 //update modifiedTime as well
 // using npm install lodash, for checking if 2objects are deeply equal
-import isEqual from 'lodash/isequal'
+
+// was causing issues in vercel
+//had to run npm install lodash.isequal separately(initially lodash.isequal was lodash/isequal)
+import isEqual from 'lodash.isequal'
 const saveData = () => {
   // comparing original_taskData and taskData returns false each time
   // comparing them as objects
