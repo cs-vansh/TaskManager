@@ -73,7 +73,7 @@ const closeDialog = () => {
 
 //update modifiedTime as well
 // using npm install lodash, for checking if 2objects are deeply equal
-import isEqual from 'lodash/isequal'
+import isEqual from 'lodash.isequal'
 const saveData = () => {
   // comparing original_taskData and taskData returns false each time
   // comparing them as objects
